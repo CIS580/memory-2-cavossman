@@ -58,6 +58,7 @@ canvas.onclick = function(event) {
   // TODO: determine which card was clicked on
   // TODO: determine what to do
 }
+var currentIndex = clientX ClientY; //check this line.
 
 /**
  * @function masterLoop
@@ -114,4 +115,8 @@ function render(elapsedTime, ctx) {
     }
   }
 
+}
+canvas.oncontextmenu = function(event){
+	event.preventDefault();
+	alert('foo');
 }
